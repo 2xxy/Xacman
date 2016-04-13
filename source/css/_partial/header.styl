@@ -22,7 +22,7 @@ body
       color color-white
 
 #imglogo
-  float left
+  margin auto
   width 4em
   height 4em
   @media mini
@@ -37,11 +37,16 @@ body
       width @width+1.5
 
 #textlogo
-  float left
+  margin auto
+  text-align center
+  a 
+    margin auto
+    text-align center
   width 75%
   margin-left 0.5em
   h1.site-name
-    width 86%
+    text-align center
+    margin auto
     if ShowCustomFont
       font-family font-custom-family
       font-size font-size+100
