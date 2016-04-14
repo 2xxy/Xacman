@@ -14,13 +14,15 @@ function root_for(path){
 %>
 <div>
 		<% if	(theme.imglogo.enable&&theme.imglogo.src){ %>
-			<div id="imglogo">
+		        <div id="divcenter">
+				<div id="imglogo">
 				<a href="<%- config.root %>"><img src="<%- config.root %><%= theme.imglogo.src %>" alt="<%= config.title %>" title="<%= config.title %>"/></a>
-			</div>
+				</div>
 			<% } %>
-			<div id="textlogo">
+				<div id="textlogo">
 				<h1 class="site-name"><a href="<%- config.root %>" title="<%= config.title %>"><%= config.title %></a></h1>
 				<h2 class="blog-motto"><% if (config.subtitle){ %><%= config.subtitle %><% } %></h2>
+				</div>
 			</div>
 			<div class="navbar"><a class="navbutton navmobile" href="#" title="<%= __('menu') %>">
 			</a></div>
